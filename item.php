@@ -3,7 +3,6 @@ $nom = 'Votre séance photo où vous voullez';
 $prix = 400;
 $image = "pics/camera.jpg"; 
 $prix = 200 ;
-
 ?>
 
 
