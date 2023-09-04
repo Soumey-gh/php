@@ -20,7 +20,7 @@ $prix = 200 ;
 <body>
     <h1> Suu Photographie</h1>
     <h2> <?php echo $nom ?> </h2>
-    <img src="<?php echo $image ?>" alt="appareil photo"/>
+    <img src="<?php echo $image ?>" alt="appareil photo" width="500px"/>
 </body>
 
 </html>
