@@ -38,3 +38,7 @@ ul li a {
     font-style: normal;
     position: relative;
 }
+.image {
+    display: flex;
+    align-items: center;
+}
