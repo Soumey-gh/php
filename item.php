@@ -1,5 +1,5 @@
 <?php
-$nom = 'Votre séance photo où vous voullez';
+$nom = 'Only for you';
 $prix = 400;
 $image = "pics/camera.jpg"; 
 $prix = 200 ;
@@ -17,7 +17,8 @@ $prix = 200 ;
 </head>
 
 <body>
-    <h1> Suu Photographie</h1>
+    <?php include('header.php') ; ?>
+    <h1> Making memories</h1>
     <h2> <?php echo $nom ?> </h2>
     <img src="<?php echo $image ?>" alt="appareil photo" width="500px"/>
 </body>

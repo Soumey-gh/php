@@ -1,0 +1,40 @@
+body {
+    background-color: #FEF5ED;
+}
+header {
+    background-color: #E0E6F4;
+    width: 1820px;
+    height: 70px;
+}
+.menu {
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    list-style-type: none;
+}
+
+
+ul li a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.title-big {
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    font-style: normal;
+    position: relative;
+}
