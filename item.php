@@ -1,6 +1,6 @@
 <?php
-$image = "pics\couple.jpg";
-$image1 = "pics\girl.jpg";
+$image = "<pics/couple.jpg";
+$image1 = "pis/girl.jpg";
 ?>
 
 
