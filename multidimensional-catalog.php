@@ -5,7 +5,7 @@ $products = [
 "price" => 250,
 "tirage" => 70,
 "discount" => 10,
-"picture_url" => "https://cdn-apple.com/iphone-12.jpg"
+"picture_url" => "pics\girl.jpg"
 ], 
 
 "En couple" => [
@@ -13,7 +13,7 @@ $products = [
 "price" => 450,
 "tirage" => 100,
 "discount" => 10,
-"picture_url" => "https://cdn-apple.com/iphone-12.jpg"
+"picture_url" => "pics\couple.jpg"
 ], 
 
 "Soirée" => [
@@ -21,7 +21,9 @@ $products = [
 "price" => 650,
 "tirage" => 200,
 "discount" => 10,
-"picture_url" => "https://cdn-apple.com/iphone-12.jpg", 
+"picture_url" => "pics\solo.jpg", 
 ]
-]
+] ;
+
+echo $products ; 
 ?>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,10 @@
 
 <body>
     <?php include('header.php'); ?>
+    <h1>
+        Nos offres 
+    </h1>
+    <?php echo include ('multidimensional-catalog.php') ; ?>
 </body>
 
 </html>
