@@ -4,7 +4,7 @@ $offre1 = [
 "price" => 450,
 "nbtirage" => 70,
 "discount" => 10,
-"picture" => "pics\couple.jpg",
+"picture" => "<pics/couple.jpg",
 ];
 
 echo $offre1 ; 
