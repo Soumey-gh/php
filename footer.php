@@ -1,5 +1,4 @@
 
-<body>
     <footer>
         <div class="footer_gauche">
             <div class="txt_footer_gauche">+33 678432676</div>

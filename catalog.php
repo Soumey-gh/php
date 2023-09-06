@@ -19,10 +19,9 @@
             'picture' => 'pics/solo.jpg'
         ], 
     ] ; 
+    
+    include ('header.php') ;
 ?>
-
-
-<?include ('header.php') ;?>
 
     <div>
         <?php foreach($products as $product): ?>
@@ -31,4 +30,4 @@
         <img src=<?php $product ['picture']?>/>
     </div> 
 
-<?php include ('footer') ?>
+<<?php include('footer.php'); ?>
