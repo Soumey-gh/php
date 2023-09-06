@@ -14,6 +14,7 @@
         <p>Prix : '450'€</p>
         <img src="pics\couple.jpg" width="250px">
     </div>
+    <?php include ('footer.php') ; ?>
 </body>
 
 </html>
