@@ -2,7 +2,7 @@
 $nom = 'Only for you';
 $prix = 400;
 $image = "pics/camera.jpg"; 
-$prix = 200 ;
+$prix = 240 ;
 ?>
 
 
