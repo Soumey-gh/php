@@ -4,8 +4,8 @@ body {
 
 header {
     background-color: #E0E6F4;
-    width: 1820px;
-    height: 70px;
+    width: 1700px;
+
 }
 
 .menu {
@@ -16,13 +16,11 @@ header {
     line-height: normal;
     text-transform: uppercase;
     font-weight: 500;
-
 }
 
 ul {
     display: flex;
-    justify-content: space-around;
-    padding: 15px;
+    justify-content: space-evenly ; 
     list-style-type: none;
 }
 
@@ -44,12 +42,12 @@ ul li a {
 
 .image {
     align-items : center ; 
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .footer {
-    background-color: #090a0a;
-    width: 1820px;
+    border-color: #090a0a;
+    width: 180px;
     height: 70px;
 }
     

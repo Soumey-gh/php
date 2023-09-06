@@ -7,9 +7,9 @@
         <div class="footer_droit">
             <div class="txt_footer_droit">Suivez-nous</div>
             <div class="reseaux">
-                <img class="imgPartenaires" src="pics/Discord.png" alt="discord">
-                <img class="imgPartenaires" src="pics/Instagram.png" alt="instagram">
-                <img class="imgPartenaires" src="pics/LinkedIn.png" alt="linkedin">
+                <img class="imgPartenaires" src="pics/discord.png" alt="discord">
+                <img class="imgPartenaires" src="pics/instagram.png" alt="instagram">
+                <img class="imgPartenaires" src="pics/linkedin.png" alt="linkedin">
             </div>
     </footer>
 </body>

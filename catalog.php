@@ -30,4 +30,4 @@
         <img src=<?php $product ['picture']?>/>
     </div> 
 
-<<?php include('footer.php'); ?>
+<<?php include('footer.php')?> ; 
