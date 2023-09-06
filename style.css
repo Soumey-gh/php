@@ -1,11 +1,13 @@
 body {
-    background-color: #FEF5ED;
+    background-color: #e6e2de;
 }
+
 header {
     background-color: #E0E6F4;
     width: 1820px;
     height: 70px;
 }
+
 .menu {
     color: black;
     text-align: center;
@@ -16,6 +18,7 @@ header {
     font-weight: 500;
 
 }
+
 ul {
     display: flex;
     justify-content: space-around;
@@ -38,7 +41,47 @@ ul li a {
     font-style: normal;
     position: relative;
 }
+
 .image {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+.footer {
+    background-color: #E0E6F4;
+    width: 1820px;
+    height: 70px;
+}
+    
+.footergauche {
+    display: flex;
+    justify-content: space-around;
+}
+
+.txt_footer_gauche {
+    flex: 1;
+    margin: 1rem;
+
+}
+
+.footer_droit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgPartenaires {
+    width: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+
+.main {
+    padding: 100px;
+}
+
+.reseaux {
+    display: flex;
 }
