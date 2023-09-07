@@ -50,6 +50,10 @@ ul li a {
 
 .product {
     display: inline-block;
+    text-align: justify;
+}
+.texte {
+    display: contents;
     text-align: center;
 }
 .photo {
