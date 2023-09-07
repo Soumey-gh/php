@@ -17,7 +17,7 @@ $products = [
     [
         'nom' => 'Mariage',
         'price' => '400€ pour',
-        'tirage' => '200 photos',
+        'tirage' => '200 photos',   
         'picture' => 'pics/solo.jpg',
     ],
 ];
