@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,6 +20,4 @@
     <div>
         <h1 class="title-big">SUU PHOTOGRAPHIE</h1>
     </div>
-</body>
 
-</html>
