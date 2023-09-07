@@ -1,0 +1,101 @@
+body {
+    background-color: #e6e2de;
+}
+
+header {
+    background-color: #9eb5b2;
+}
+
+.menu {
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly ; 
+    list-style-type: none;
+}
+
+
+ul li a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.title-big {
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    font-style: normal;
+    position: relative;
+}
+.titre1 {
+    text-align: center;
+    font-style: italic;
+    position: relative;
+}
+.pics {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.product {
+    display: inline-block;
+    text-align: center;
+}
+.photo {
+    display: inline-block;
+    margin: 2rem;
+}
+
+footer {
+    background-color: #9eb5b2;
+    display: block;
+    width: 100%;
+    height: fit-content ; 
+    align-items: center;
+}
+
+.footergauche {
+    display: flex;
+    flex-direction: column;
+}
+
+.txt_footer_gauche {
+    padding-top: 1rem;
+    flex: 1;
+}
+.txt_footer_droit {
+    padding-top: 1rem;
+    flex: 1;
+}
+
+.footer_droit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgPartenaires {
+    width: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.main {
+    padding: 100px;
+}
+
+.reseaux {
+    display: flex;
+}
