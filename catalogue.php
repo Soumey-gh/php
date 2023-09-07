@@ -4,29 +4,29 @@ include('header.php');
 $products = [
     [
         'nom' => 'Séance individuelle',
-        'price' => '200€',
+        'price' => '200€ pour',
         'tirage' => '70 photos',
         'picture' => 'pics\girl.jpg',
     ],
     [
         'nom' => 'Séance en couple',
-        'price' => '300€',
+        'price' => '300€ pour',
         'tirage' => '150 photos',
         'picture' => 'pics/couple.jpg',
     ],
     [
         'nom' => 'Mariage',
-        'price' => '400€',
+        'price' => '400€ pour',
         'tirage' => '200 photos',
         'picture' => 'pics/solo.jpg',
     ],
 ];
 ?>
 
-<h1>Nos offres</h1>
+<h1 class="titre1">Nos offres</h1>
 
 <div class="offre">
-    <p>Making memories
+    <p>
         <?php foreach ($products as $product) : ?>
 
     <div class="product">
@@ -34,9 +34,8 @@ $products = [
             echo $product['price'];
             echo $product['tirage'];
         ?>
-      <img class="image" src="<?php  echo $product['picture'] ?>" alt="appareil photo" width="350px" />
-
     </div>
+    <img class="photo" src="<?php echo $product['picture'] ?>" alt="appareil photo" width="300px" />
 
 <?php endforeach ?>
 </p>

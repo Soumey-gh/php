@@ -48,9 +48,13 @@ ul li a {
     margin: 2rem;
 }
 
-.image {
-    align-items : center ; 
-    justify-content: center;
+.product {
+    display: inline-block;
+    text-align: center;
+}
+.photo {
+    display: inline-block;
+    margin: 2rem;
 }
 
 footer {
