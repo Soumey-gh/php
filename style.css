@@ -3,9 +3,7 @@ body {
 }
 
 header {
-    background-color: #E0E6F4;
-    width: 1700px;
-
+    background-color: #9eb5b2;
 }
 
 .menu {
@@ -39,6 +37,16 @@ ul li a {
     font-style: normal;
     position: relative;
 }
+.titre1 {
+    text-align: center;
+    font-style: italic;
+    position: relative;
+}
+.pics {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
 
 .image {
     align-items : center ; 
@@ -46,20 +54,25 @@ ul li a {
 }
 
 footer {
-    border-color: #090a0a;
-    width: 180px;
-    height: 70px;
+    background-color: #9eb5b2;
+    display: block;
+    width: 100%;
+    height: fit-content ; 
+    align-items: center;
 }
-    
+
 .footergauche {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 .txt_footer_gauche {
+    padding-top: 1rem;
     flex: 1;
-    margin: 1rem;
-
+}
+.txt_footer_droit {
+    padding-top: 1rem;
+    flex: 1;
 }
 
 .footer_droit {
@@ -74,7 +87,6 @@ footer {
     align-items: center;
     flex-direction: column-reverse;
 }
-
 
 .main {
     padding: 100px;

@@ -1,7 +1,7 @@
 <?php
 $image = "pics\couple.jpg";
 $image1 = "pics\solo.jpg";
-$image2= "pics\girl.jpg"; 
+$image2 = "pics\girl.jpg";
 ?>
 
 
@@ -19,11 +19,12 @@ $image2= "pics\girl.jpg";
 <body>
     <?php include('header.php'); ?>
 
-    <h1> Making memories</h1>
-    <img class="image" src="<?php echo $image ?>" alt="appareil photo" width="400px" />
-    <img class="image" src="<?php echo $image1 ?>" alt="appareil photo" width="360px" />
-    <img class="image" src="<?php echo $image2 ?>" alt="appareil photo" width="350px" />
-
+    <h1 class ="titre1"> Making memories</h1>
+    <div class ="pics">
+        <img class="image" src="<?php echo $image ?>" alt="appareil photo" width="400px" />
+        <img class="image" src="<?php echo $image1 ?>" alt="appareil photo" width="360px" />
+        <img class="image" src="<?php echo $image2 ?>" alt="appareil photo" width="350px" />
+    </div>
 
     <?php include('footer.php'); ?>
 
