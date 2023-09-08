@@ -31,7 +31,7 @@ $products = [
 <div class="produits">
     <p>
         <?php foreach ($products as $product) : ?>
-                <img  class = "img" src="<?php echo $product['picture'] ?>" alt="appareil photo" width="300px" />
+                <img  class = "pics" src="<?php echo $product['picture'] ?>" alt="appareil photo" width="300px" />
                     <p class="text">
                         <?php echo $product['nom'].'<br>', $product['tirage'].'<br>' ; ?>
                     </p>
