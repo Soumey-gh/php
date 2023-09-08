@@ -5,20 +5,22 @@ include ('functions.php') ;
 $products = [
     [
         'nom' => 'Séance individuelle',
-        'price' => '200€',
+        'price' => '200',
         'tirage' => '70 photos',
         'picture' => 'pics\girl.jpg',
     ],
     [
         'nom' => 'Séance en couple',
-        'price' => '300€',
+        'price' => '300',
         'tirage' => '150 photos',
+        'discount'=> '10',
         'picture' => 'pics/couple.jpg',
     ],
     [
         'nom' => 'Mariage',
-        'price' => '400€ ',
+        'price' => '400',
         'tirage' => '200 photos',
+        'discount' => '20',
         'picture' => 'pics/solo.jpg',
     ],
 ];
@@ -31,11 +33,19 @@ $products = [
         <?php foreach ($products as $product) : ?>
                 <img  class = "img" src="<?php echo $product['picture'] ?>" alt="appareil photo" width="300px" />
                     <p class="text">
-                        <?php echo $product['nom'].'<br>',$product['price']. '<br>', $product['tirage'].'<br>' ;
-                        echo discount($price, $discount) ; 
-                        echo discount($price1, $discount) ; 
-                        ?>
+                        <?php echo $product['nom'].'<br>', $product['tirage'].'<br>' ; ?>
                     </p>
+                        <div class="price ">
+                            <p> Prix = <?php echo pricettc ($product ['price']). "€"; ?> </p>
+                            <P> Prix HT = <?php echo number_format(priceHT($product ['price']),2,",",''). "€"; ?></P>
+                            <P>
+                                <?php if ($product ["discount"] !== null ): 
+                                    echo "Vous avez une promotion de : ". $product ['discount']. " % soit la séance à ". number_format(discount($product['price'], $product['discount']),2,",",''). "€";
+                                    ?>
+                                <?php endif; ?>
+                            </P>
+                        </div>
+                    
        <?php endforeach; ?>
     </p>
 </div>
