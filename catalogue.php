@@ -1,5 +1,6 @@
 <?php
 include('header.php');
+include ('functions.php') ;
 
 $products = [
     [
@@ -25,19 +26,17 @@ $products = [
 
 <h1 class="titre1">Nos offres</h1>
 
-<div>
+<div class="produits">
     <p>
         <?php foreach ($products as $product) : ?>
-            <div>
-                <p class="photo">
-                    <img class="photo" src="<?php echo $product['picture'] ?>" alt="appareil photo" width="300px" />
-                </p>
-                <p class="text">
-                    <?php echo $product['nom'].'<br>',$product['price']. '<br>', $product['tirage']; ?>
-                </p>
-            </div>
-  
+                <img  class = "img" src="<?php echo $product['picture'] ?>" alt="appareil photo" width="300px" />
+                    <p class="text">
+                        <?php echo $product['nom'].'<br>',$product['price']. '<br>', $product['tirage'].'<br>' ;
+                        echo discount($price, $discount) ; 
+                        echo discount($price1, $discount) ; 
+                        ?>
+                    </p>
        <?php endforeach; ?>
     </p>
-    <?php include('footer.php');?>
 </div>
+    <?php include('footer.php');?>

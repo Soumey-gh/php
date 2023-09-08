@@ -19,21 +19,15 @@ $image2 = "pics\girl.jpg";
 <body>
     <?php include('header.php'); ?>
 
-    <h1 class="titre1"> Making memories</h1>
+        <h1 class="titre1"> Making memories</h1>
 
-    <div class="pics">
-        <div>
-            <img class="image1" src="<?php echo $image ?>" alt="appareil photo" width="400px" />
-        </div>
-        <div> 
-            <img class="image2" src="<?php echo $image1 ?>" alt="appareil photo" width="360px" />
-        </div>
-        <div>
-            <img class="image3" src="<?php echo $image2 ?>" alt="appareil photo" width="350px" />
+        <div class="pics">
+                <img class="image" src="<?php echo $image ?>" alt="appareil photo" width="400px" />
+                <img class="image" src="<?php echo $image1 ?>" alt="appareil photo" width="400px" />
+                <img class="image" src="<?php echo $image2 ?>" alt="appareil photo" width="400px" />
         </div>
 
-
-        <?php include('footer.php'); ?>
+    <?php include('footer.php'); ?>
 
 </body>
 
