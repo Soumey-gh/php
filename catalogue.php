@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 include('header.php');
 include('functions.php');
 
@@ -111,4 +111,4 @@ $products = [
 
 
 
-<?php include('footer.php'); ?>
+<?php include('footer.php'); ?> -->

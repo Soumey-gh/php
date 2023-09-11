@@ -3,42 +3,47 @@ include('header.php');
 ?>
 
 
-<?php
-if (isset ($_POST ['envoyer'])) {
+<!-- <?php
+if (isset ($_POST['submit'])) {
 
-    if (empty($_POST ['nom'])) {
-        echo "Veuillez saisir l'information demandé" ; 
-    } elseif (empty ($_POST ['email'])) {
-        echo "Veuillez saisir l'information demandé" ; 
+    if (empty($_POST ['envoyer'])) {
+        echo "Veuillez choisir le nombre de séance" ; 
     }
-    } elseif (empty ($_POST ['date'])) {
-         echo "Veuillez saisir l'information demandé";
-    } elseif (empty ($_POST ['lieux'])) {
-        echo "Veuillez saisir l'information demandé" ; 
-    } elseif (empty ($_POST ['prestation'])) {
-        echo "Veuillez saisir l'information demandé" ; 
-    } else {
-    $nom = $_POST ['nom'].'<br>' ;  
-    echo "Nom du client :  $nom "; 
-    $email = $_POST ['email'].'<br>' ; 
-    echo " L'email du client $email" ; 
-    $date = $_POST ['date'].'<br>' ; 
-    echo "La date demandé : $date" ; 
-    $lieux = $_POST ['lieux'].'<br>' ;
-    echo "Le lieux de la prestation est : $lieux" ; 
-    $prestation = $_POST ['prestation'].'<br>' ; 
-    echo "La prestation que le client prend : $prestation" ; 
-    }
+}
+?>  -->
+<h3> Merci de remplir le formulaire de contact pour finaliser le panier </h3>
+<form>
+    <fieldset>
+        <legend>
+            <b>Formulaire de Contact</b>
+        </legend>
+        <p>
+            <label for ="nom">Nom et Prénom:</label>
+            <input id="nom" type="texte" name="nom" placeholder="Votre Nom et Prénom" size="30">
+        </p>
+        <p>
+            <label for ="email">Adresse mail:</label>
+            <input id="email" type="email" name="email" placeholder="Votre adresse mail" size="30">
+        </p>
+       <p>
+            <label for ="date">Date :</label>
+            <input id="date" type="texte" name="date" placeholder="ex : le 12 septembre" size="30">
+        </p>
+        <p>
+            <label for ="lieux">Lieux de la prestation :</label>
+            <input id="lieux" type="texte" name="lieux" placeholder="Ex : Grenoble" size="30">
+        </p>
+        <p>
+            <label for ="nom">Votre prestation:</label>
+            <select id="Votre prestation"> 
+                <option value="Prestation que vous souhaitez">Séance individuelle</option>
+                <option value="Prestation que vous souhaitez">Séance en couple</option>
+                <option value="Prestation que vous souhaitez">Mariage</option>
+            </select>
+        </p>
+    </fieldset>
+</form>
 
+<?php include('cart.php') ; ?>
 
-
-
-?>
-
-
-
-
-
-
-
-<?php include('footer.php'); 
+<?php include('footer.php'); ?>

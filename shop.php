@@ -50,15 +50,17 @@ $products = [
             </p>
         </div>
             <form method="post" action="panier.php">
-                <button class="seance" type="button"> Sélectionner cette séance </button>
+                <label class="seance" type="texte" value=" Je veux "> Je veux  </label>
                     <p >
                     <label for="prestation">Pour :</label>
                         <select id="nombre de séance ">
+                            <option value="Prestation que vous souhaitez"></option>
                              <option value="Prestation que vous souhaitez">1 séance </option>
                              <option value="Prestation que vous souhaitez">2 séances </option>
                             <option value="Prestation que vous souhaitez">3 séances </option>
                         </select>
-                    <p></p>
+                            <input type="submit" name="envoyer" value="Envoyer">
+                            <input type="reset" name="reset" value="Effacer">
             </form>
          </div>
     <?php endforeach ?>
