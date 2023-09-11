@@ -49,4 +49,52 @@ $products = [
        <?php endforeach; ?>
     </p>
 </div>
+
+
+<form method = "post" action="panier.php">
+    <fieldset>
+        <legend>
+            <b>Formulaire de Contact</b>
+        </legend>
+        <p>
+            <label for ="nom">Nom et Prénom:</label>
+            <input id="nom" type="texte" name="nom" placeholder="Votre Nom et Prénom" size="30">
+        </p>
+        <p>
+            <label for ="email">Adresse mail:</label>
+            <input id="email" type="email" name="email" placeholder="Votre adresse mail" size="30">
+        </p>
+       <p>
+            <label for ="date">Date :</label>
+            <input id="date" type="texte" name="date" placeholder="ex : le 12 septembre" size="30">
+        </p>
+        <p>
+            <label for ="lieux">Lieux de la prestation :</label>
+            <input id="lieux" type="texte" name="lieux" placeholder="Ex : Grenoble" size="30">
+        </p>
+        <p>
+            <label for ="nom">Votre prestation:</label>
+            <select id="Votre prestation"> 
+                <option value="Prestation que vous souhaitez">Séance individuelle</option>
+                <option value="Prestation que vous souhaitez">Séance en couple</option>
+                <option value="Prestation que vous souhaitez">Mariage</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" name="envoyer" value="Envoyer">
+            <input type="reset" name="reset" value="Effacer">
+        </p>
+    </fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
     <?php include('footer.php');?>
