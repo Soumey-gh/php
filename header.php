@@ -13,7 +13,7 @@
         <nav>
             <ul>
                 <li class="menu"><a href="item.php">Acceuil </a></li>
-                <li class="menu"><a href="catalogue.php">Catalogue </a></li>
+                <li class="menu"><a href="shop.php">Catalogue </a></li>
             </ul>
         </nav>
     </header>

@@ -1,6 +1,6 @@
 <?php
 include('header.php');
-include ('functions.php') ;
+include('functions.php');
 
 $products = [
     [
@@ -13,7 +13,7 @@ $products = [
         'nom' => 'Séance en couple',
         'price' => '300',
         'tirage' => '150 photos',
-        'discount'=> '10',
+        'discount' => '10',
         'picture' => 'pics/couple.jpg',
     ],
     [
@@ -29,52 +29,66 @@ $products = [
 <h1 class="titre1">Nos offres</h1>
 
 <div class="produits">
-    <p>
+    <div class="img">
         <?php foreach ($products as $product) : ?>
-                <img  class = "pics" src="<?php echo $product['picture'] ?>" alt="appareil photo" width="300px" />
-                    <p class="text">
-                        <?php echo $product['nom'].'<br>', $product['tirage'].'<br>' ; ?>
-                    </p>
-                        <div class="price ">
-                            <p> Prix = <?php echo pricettc ($product ['price']). "€"; ?> </p>
-                            <P> Prix HT = <?php echo number_format(priceHT($product ['price']),2,",",''). "€"; ?></P>
-                            <P>
-                                <?php if ($product ["discount"] !== null ): 
-                                    echo "Vous avez une promotion de : ". $product ['discount']. " % soit la séance à ". number_format(discount($product['price'], $product['discount']),2,",",''). "€";
-                                    ?>
-                                <?php endif; ?>
-                            </P>
-                        </div>
-                    
-       <?php endforeach; ?>
-    </p>
+            <img src="<?php echo $product['picture'] ?>" alt="appareil photo" width="300px" />
+    </div>
+    <!-- <div class="text">
+        <?php echo $product['nom'] . '<br>', $product['tirage'] . '<br>'; ?>
+        </div>
+    <div class="price ">
+        <p> Prix = <?php echo pricettc($product['price']) . "€"; ?> </p>
+        <P> Prix HT = <?php echo number_format(priceHT($product['price']), 2, ",", '') . "€"; ?></P>
+        <P>
+            <?php if ($product["discount"] !== null) :
+                echo "Vous avez une promotion de : " . $product['discount'] . " % soit la séance à " . number_format(discount($product['price'], $product['discount']), 2, ",", '') . "€";
+            ?>
+            <?php endif; ?>
+        </P> -->
+        <!-- <p>
+        <form method="post" action="panier.php">
+            <button class="séance" type="button"> Sélectionner cette séance </button>
+            <p>
+                <label for="prestation">Votre prestation:</label>
+                <select id="Votre prestation">
+                    <option value="Prestation que vous souhaitez">Séance individuelle</option>
+                    <option value="Prestation que vous souhaitez">Séance en couple</option>
+                    <option value="Prestation que vous souhaitez">Mariage</option>
+                </select>
+
+        </form>
+        </p> -->
+    </div>
+
+<?php endforeach; ?>
+</p>
 </div>
 
 
-<form method = "post" action="panier.php">
+<!-- <form method="post" action="panier.php">
     <fieldset>
         <legend>
             <b>Formulaire de Contact</b>
         </legend>
         <p>
-            <label for ="nom">Nom et Prénom:</label>
+            <label for="nom">Nom et Prénom:</label>
             <input id="nom" type="texte" name="nom" placeholder="Votre Nom et Prénom" size="30">
         </p>
         <p>
-            <label for ="email">Adresse mail:</label>
+            <label for="email">Adresse mail:</label>
             <input id="email" type="email" name="email" placeholder="Votre adresse mail" size="30">
         </p>
-       <p>
-            <label for ="date">Date :</label>
+        <p>
+            <label for="date">Date :</label>
             <input id="date" type="texte" name="date" placeholder="ex : le 12 septembre" size="30">
         </p>
         <p>
-            <label for ="lieux">Lieux de la prestation :</label>
+            <label for="lieux">Lieux de la prestation :</label>
             <input id="lieux" type="texte" name="lieux" placeholder="Ex : Grenoble" size="30">
         </p>
         <p>
-            <label for ="prestation">Votre prestation:</label>
-            <select id="Votre prestation"> 
+            <label for="prestation">Votre prestation:</label>
+            <select id="Votre prestation">
                 <option value="Prestation que vous souhaitez">Séance individuelle</option>
                 <option value="Prestation que vous souhaitez">Séance en couple</option>
                 <option value="Prestation que vous souhaitez">Mariage</option>
@@ -85,7 +99,7 @@ $products = [
             <input type="reset" name="reset" value="Effacer">
         </p>
     </fieldset>
-</form>
+</form> -->
 
 
 
@@ -97,4 +111,4 @@ $products = [
 
 
 
-    <?php include('footer.php');?>
+<?php include('footer.php'); ?>

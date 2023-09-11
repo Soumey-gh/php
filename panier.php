@@ -2,6 +2,7 @@
 include('header.php'); 
 ?>
 
+
 <?php
 if (isset ($_POST ['envoyer'])) {
 
@@ -23,7 +24,7 @@ if (isset ($_POST ['envoyer'])) {
     echo " L'email du client $email" ; 
     $date = $_POST ['date'].'<br>' ; 
     echo "La date demandé : $date" ; 
-    $lieux = $_POST ['lieux'].'<br>' ; 
+    $lieux = $_POST ['lieux'].'<br>' ;
     echo "Le lieux de la prestation est : $lieux" ; 
     $prestation = $_POST ['prestation'].'<br>' ; 
     echo "La prestation que le client prend : $prestation" ; 
