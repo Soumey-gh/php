@@ -73,7 +73,7 @@ $products = [
             <input id="lieux" type="texte" name="lieux" placeholder="Ex : Grenoble" size="30">
         </p>
         <p>
-            <label for ="nom">Votre prestation:</label>
+            <label for ="prestation">Votre prestation:</label>
             <select id="Votre prestation"> 
                 <option value="Prestation que vous souhaitez">Séance individuelle</option>
                 <option value="Prestation que vous souhaitez">Séance en couple</option>
