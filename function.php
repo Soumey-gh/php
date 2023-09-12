@@ -4,7 +4,7 @@ function getproducts () {
     return [
                 [
                     "id" => '1',
-                    'nom' => 'Appareil photo',
+                    'nom' => 'Appareil',
                     'price' => '200',
                     'picture' => 'pics\app.png',
                 ],
@@ -35,7 +35,6 @@ foreach ($products as $product ) {
 }
 var_dump($id) ; 
 }
-
 ?>
 
 

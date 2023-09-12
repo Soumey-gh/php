@@ -78,13 +78,13 @@ ul li a {
     background-image: linear-gradient(to top left, rgb (0, 0, 0, 0.2));
 }
 
-.thead {
+/* .thead {
     background-color: #e6e2de;
     border: 1px solid black;
 }
-th, td  {
-    padding: 2rem;
-}
+ 
+
+
 /* .panier {
     display: flex;
     align-items: center;
@@ -95,7 +95,9 @@ th, td  {
     border: 1px solid black;
 }
  */
-
+tr {
+    padding: 2rem;
+}
 
 
 /* FOOTER */

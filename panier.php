@@ -15,9 +15,9 @@ $productid = (int)$_POST['idpanier'];
 $quantite = $_POST['quantite'];
 // echo $productid ; 
 // echo $quantite; 
-// $totalpanier = $productid[ $product['price']] * $quantite;
 $produits = getproducts();
 $produit = $produits[$productid];
+$totalpanier =  $produit['price'] * $quantite;
 // echo $produit ; 
 // var_dump($products) ; 
 ?>
@@ -25,7 +25,7 @@ $produit = $produits[$productid];
 
 <form action="panier.php" method="post">
 <div>
-    <table class="tab">
+    <table>
         <thead>
             <tr>
                 <th> Produits</th>
@@ -37,21 +37,11 @@ $produit = $produits[$productid];
 
         <tbody>
             <tr>
-                <th><?php echo $produit['nom'] ?>
-                </th>
-                <td>
-                    <?php echo $produit['price'] ?>
-                </td>
-                <td>
-                    <?php echo $produit['quantite'] ?>
-                </td>
-                <td>
-                    <?php echo $produit['price'] ?>
-                </td>
+                <th> <?php echo $produit['nom'] ?> </th>
+                <td> <?php echo $produit['price'] ?> </td>
+                <td> <?php echo $quantite ?> </td>
+                <td><?php echo  $totalpanier ?></td>    
             </tr>
-            
-
-
         </tbody>
         </thead>
 
