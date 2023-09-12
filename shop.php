@@ -10,7 +10,7 @@ $products = getproducts();
 
 <div class="produits">
 
-    <?php foreach ($products as $productid =>  $product) : ?>
+    <?php foreach ($products as $product) : ?>
         <img src="<?php echo $product['picture'] ?>" alt="appareil photo" width="420px" />
 
         <div class="">

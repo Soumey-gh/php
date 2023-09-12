@@ -3,20 +3,20 @@
 function getproducts () {
     return [
                 [
-                    "id" => '1',
+                    "id" => '0',
                     'nom' => 'Appareil',
                     'price' => '200',
                     'picture' => 'pics\app.png',
                 ],
                 [
-                    "id" => '2',
+                    "id" => '1',
                     'nom' => 'Location de matériel',
                     'price' => '300',
                     'discount' => '10',
                     'picture' => 'pics\materiel.png',
                 ],
                 [
-                    "id" => '3',
+                    "id" => '2',
                     'nom' => 'Drone',
                     'price' => '400',
                     'discount' => '20',
