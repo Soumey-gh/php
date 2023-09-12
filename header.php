@@ -18,6 +18,6 @@
         </nav>
     </header>
     <div>
-        <h1 class="title-big">SUU PHOTOGRAPHIE</h1>
+        <h1 class="title-big">PHOTOGRAPHIE</h1>
     </div>
 

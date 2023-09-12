@@ -4,34 +4,31 @@ include('functions.php');
 
 $products = [
     [
-        'nom' => 'Séance individuelle',
+        'nom' => 'Appareil photo',
         'price' => '200',
-        'tirage' => '70 photos',
-        'picture' => 'pics\girl.jpg',
+        'picture' => 'pics\app.png',
     ],
     [
-        'nom' => 'Séance en couple',
+        'nom' => 'Location de matériel',
         'price' => '300',
-        'tirage' => '150 photos',
         'discount' => '10',
-        'picture' => 'pics/couple.jpg',
+        'picture' => 'pics\materiel.png',
     ],
     [
-        'nom' => 'Mariage',
+        'nom' => 'Drone',
         'price' => '400',
-        'tirage' => '200 photos',
         'discount' => '20',
-        'picture' => 'pics/solo.jpg',
+        'picture' => 'pics\drone.png',
     ],
 ];
 ?>
 
-<h1 class="titre1">Nos offres</h1>
+<h1 class="titre1">Nos Produits</h1>
 
 <div class="produits">
 
     <?php foreach ($products as $product) : ?>
-    <img src="<?php echo $product['picture'] ?>" alt="appareil photo" width="320px" />
+    <img src="<?php echo $product['picture'] ?>" alt="appareil photo" width="420px" />
 
     <div class="">
         <div>
@@ -50,14 +47,14 @@ $products = [
             </p>
         </div>
             <form method="post" action="panier.php">
-                <label class="seance" type="texte" value=" Je veux "> Je veux  </label>
+            <label class="seance" type="texte" value=" Commander"> Commander  </label>
                     <p >
-                    <label for="prestation">Pour :</label>
+                    <label for="prestation">Quantité</label>
                         <select id="nombre de séance ">
                             <option value="Prestation que vous souhaitez"></option>
-                             <option value="Prestation que vous souhaitez">1 séance </option>
-                             <option value="Prestation que vous souhaitez">2 séances </option>
-                            <option value="Prestation que vous souhaitez">3 séances </option>
+                             <option value="Prestation que vous souhaitez">1</option>
+                             <option value="Prestation que vous souhaitez">2</option>
+                            <option value="Prestation que vous souhaitez">3</option>
                         </select>
                             <input type="submit" name="envoyer" value="Envoyer">
                             <input type="reset" name="reset" value="Effacer">
@@ -65,5 +62,6 @@ $products = [
          </div>
     <?php endforeach ?>
 </div>
+
 
 <?php include ('footer.php') ?>

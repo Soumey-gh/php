@@ -3,14 +3,14 @@ include('header.php');
 ?>
 
 
-<!-- <?php
+<?php
 if (isset ($_POST['submit'])) {
 
     if (empty($_POST ['envoyer'])) {
         echo "Veuillez choisir le nombre de séance" ; 
     }
 }
-?>  -->
+?> 
 <h3> Merci de remplir le formulaire de contact pour finaliser le panier </h3>
 <form>
     <fieldset>

@@ -1,6 +1,3 @@
-
-
-
 body {
     background-color: #e6e2de;
 }
@@ -54,7 +51,7 @@ ul li a {
 }
 
 .produits {
-    display: grid ;
+    display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 3px;
@@ -69,15 +66,16 @@ ul li a {
     color: rgb(64, 64, 58);
     border-radius: 10 px;
     background-color: rgb(248, 173, 243);
-    background-image: linear-gradient(to top left, rgb (0,0,0,0.2));
+    background-image: linear-gradient(to top left, rgb (0, 0, 0, 0.2));
 }
-    .seance {
+
+.seance {
     border: 0;
     line-height: 1;
     padding: 0, 20 px;
     font-size: 1rem;
     background-color: #9eb5b2;
-    background-image: linear-gradient(to top left, rgb (0,0,0,0.2));
+    background-image: linear-gradient(to top left, rgb (0, 0, 0, 0.2));
 }
 
 /* .img {
@@ -107,11 +105,51 @@ ul li a {
    text-align: right;
 } */
 
-.footer{
+/* PANIER */
+.panier {
+    display: flex;
+    align-items: center;
+    width:70% ;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 2rem;
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: medium;
+    border: 1px solid black;
+}
+
+th {
+    padding:10px 0 ;
+    font-weight:200 ;
+    
+}
+
+td {
+    border-top: 0.5px;
+    border: 1px solid black;
+}
+
+tr {
+    border-bottom: 0.5px;
+}
+
+.total.th {
+    float: right;
+}
+
+
+
+/* FOOTER */
+.footer {
     background-color: #9eb5b2;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     text-transform: uppercase;
     list-style: none;
 }
-
