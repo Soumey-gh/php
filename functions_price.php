@@ -1,7 +1,7 @@
 <?php 
 
-function formatPrice($price) : string  {
-   return ($price); 
+function formatPrice( int $price) : string  {
+   return  ($price); 
 }
 
 function pricettc($price) : string {

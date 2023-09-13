@@ -1,5 +1,5 @@
 <?php
-$tarifTTC = 100 ; 
+$tarifTTC = 200 ; 
 
 if ($tarifTTC > 150) {
     echo "vous n'avez pas le droit à une réduction"; 

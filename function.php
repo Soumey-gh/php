@@ -5,7 +5,7 @@ function getproducts () {
                 [
                     "id" => '0',
                     'nom' => 'Appareil',
-                    'price' => '200',
+                    'price' => 200,
                     'picture' => 'pics\app.png',
                 ],
                 [
