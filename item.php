@@ -1,4 +1,5 @@
 <?php
+
 $image = "pics\couple.jpg";
 $image1 = "pics\solo.jpg";
 $image2 = "pics\girl.jpg";
