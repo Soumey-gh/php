@@ -3,9 +3,9 @@
 try 
 {
     $mysqlConnection = new PDO(
-        'mysql:host=localhost;dbname=itabase;charset=utf8',
-        'soumey',
-        'pass'
+        'mysql:host=localhost;dbname=test_projet;charset=utf8',
+        'test_user',
+        'password'
     );
 }
 catch (Exception $e)
@@ -17,12 +17,14 @@ function Query1($mysqlConnection) {
 $Query1 = $mysqlConnection->prepare('SELECT * FROM customers') ; 
 $Query1->execute(); 
 $itabase = $Query1->fetchAll(); 
+$liste=[];
 foreach ($itabase as $customers ) {
-    echo $customers['firstname'];
-    echo $customers['lastname'],'<br>' ;
-    echo $customers['address'],'<br>' ;
-    echo $customers['city'],'<br>' ;
+    $liste=[$customers]['firstname'];
+    $liste=[$customers]['lastname'];
+    $liste=$customers['address'];
+    $liste=[$customers]['city'];
 }
+return $liste;
 }
 
 Query1($mysqlConnection) ; 

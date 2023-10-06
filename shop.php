@@ -2,7 +2,7 @@
 include('header.php');
 include('function.php');
 include('functions_price.php');
-// include ('database.php') ; 
+include ('database.php') ; 
 
 $products = Query1($mysqlConnection);
 ?>
