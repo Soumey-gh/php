@@ -4,7 +4,7 @@ include('function.php');
 include('functions_price.php');
 // include ('database.php') ; 
 
-$products = getproducts();
+$products = Query1($mysqlConnection);
 ?>
 
 <h1 class="titre1">Nos Produits</h1>
